@@ -1,0 +1,20 @@
+[/]
+arc-menu-icon=26
+dash-to-panel-standalone=true
+enable-standlone-runner-menu=true
+menu-background-color='rgba(48,48,49,0.98)'
+menu-border-color='rgb(60,60,60)'
+menu-button-appearance='Icon_Text'
+menu-button-icon='Menu_Icon'
+menu-foreground-color='rgb(223,223,223)'
+menu-item-active-bg-color='rgb(25,98,163)'
+menu-item-active-fg-color='rgb(255,255,255)'
+menu-item-hover-bg-color='rgb(21,83,158)'
+menu-item-hover-fg-color='rgb(255,255,255)'
+menu-separator-color='rgba(255,255,255,0.1)'
+multi-monitor=false
+pinned-app-list=['Firefox', '', 'firefox.desktop', 'Pliki', '', 'org.gnome.Nautilus.desktop', 'Terminal', '', 'org.gnome.Terminal.desktop', 'Menedżer Rozszerzeń', '', 'com.mattjakeman.ExtensionManager.desktop', 'ArcMenu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-extensions prefs arcmenu@arcmenu.com']
+prefs-visible-page=0
+recently-installed-apps=['gufw.desktop']
+search-entry-border-radius=(true, 25)
+show-activities-button=true
