@@ -88,7 +88,7 @@ scaling-factor=uint32 2
 sudo dpkg-reconfigure gdm3
 ```
 
-## Instalacj gnome theme gtk4
+## Instalacja gnome 43+ theme gtk4
 
 Skopiuj z **~/.themes/Gruvbox-Dark-BL-MOD/gtk-4.0** do katalogu **~/.config/gtk4.0**
 
