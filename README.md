@@ -93,7 +93,7 @@ sudo dpkg-reconfigure gdm3
 Skopiuj ze skórkę z .themes/Gruvbox-Dark-BL-MOD/gtk-4.0 do katalogu ~/.config/gtk4.0
 
 ```sh
-# gtk4
+# gtk3
 sudo apt install gnome-tweaks
 
 # gtk4 run this
