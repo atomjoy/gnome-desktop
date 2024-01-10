@@ -6,7 +6,7 @@ Instalacja dodatków do gnome desktop i firefoxa.
 
 - Zainstalować sudo apt install ffmpeg
 - Pobrać firefoxa ze strony https://www.mozilla.org/pl/firefox/new/ rozpakować do **/home/user/Documenty**
-- Uruchamiać z /home/user/Documenty/firefox/firefox-bin (ten firefox-esr się wysypuje z youtubem)
+- Uruchamiać z /home/user/Documenty/firefox/firefox-bin (Standardowy firefox-esr się wysypuje z youtubem podczas oglądania)
 
 ### Aktywator do firefoxa
 
@@ -46,14 +46,15 @@ flatpak run com.mattjakeman.ExtensionManager
 
 ### Dodaj rozszerzenia
 
-ArcMenu, Blur my Shell, Custom Accent Colors, Vitals, Unblank lock screen, Desktop Icons NG, User Themes, Dash to Panel, Dash to Dock
+ArcMenu, Blur my Shell, Custom Accent Colors, Vitals, Unblank lock screen, Desktop Icons NG, User Themes, Dash to Panel, Dash to Dock, Dash to Panel
 
 <img src="https://raw.githubusercontent.com/atomjoy/gnome-desktop/main/gnome-extensions.png" width="100%">
 
 
 ### Gnome desktop extensions (Debian/Fedora)
 
-Dash to Dock i animacje (się troche krzaczy ze starymi okienkami shella dublują sie paski czasami a z animacjami znikaja :))
+- Dash to Dock z animacjami się troche krzaczy ze starymi okienkami shella dublują sie paski a czasami paski znikaja :)) 
+- Zainstalować zamiast tego ArcMenu i Dash to Panel (umieścić dash na dole ekranów).
 
 <img src="https://raw.githubusercontent.com/atomjoy/gnome-desktop/main/debian-gnome-3.png" width="100%">
 
