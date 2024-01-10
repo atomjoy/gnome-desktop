@@ -90,7 +90,7 @@ sudo dpkg-reconfigure gdm3
 
 ## Instalacj gnome theme gtk4
 
-Skopiuj ze skórkę z .themes/Gruvbox-Dark-BL-MOD/gtk-4.0 do katalogu ~/.config/gtk4.0
+Skopiuj z **~/.themes/Gruvbox-Dark-BL-MOD/gtk-4.0** do katalogu **~/.config/gtk4.0**
 
 ```sh
 # gtk3
