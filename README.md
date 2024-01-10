@@ -87,3 +87,18 @@ scaling-factor=uint32 2
 ```sh
 sudo dpkg-reconfigure gdm3
 ```
+
+## Instalacj gnome theme gtk4
+
+Skopiuj ze skórkę z .themes/Gruvbox-Dark-BL-MOD/gtk-4.0 do katalogu ~/.config/gtk4.0
+
+```sh
+# gtk4
+sudo apt install gnome-tweaks
+
+# gtk4 run this
+gsettings set org.gnome.desktop.interface gtk-theme Gruvbox-Dark-BL-MOD
+
+# gtk4 refresh titlebars
+gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-Dark-BL-MOD
+```
