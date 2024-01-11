@@ -57,6 +57,7 @@ ArcMenu, Blur my Shell, Custom Accent Colors, Vitals, Unblank lock screen, Deskt
 - Zainstalować zamiast tego ArcMenu i Dash to Panel (umieścić dash na dole ekranów).
 
 <img src="https://raw.githubusercontent.com/atomjoy/gnome-desktop/main/debian-gnome-3.png" width="100%">
+<img src="https://raw.githubusercontent.com/atomjoy/gnome-desktop/main/gruvbox-theme.png" width="100%">
 
 ## Dodaj skalowanie ekranów (125%/150%/175%)
 
