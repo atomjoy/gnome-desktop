@@ -6,10 +6,11 @@
 	"git.enabled": false,
 
 	// Php
-	"php.validate.executablePath": "C:/xampp/php/php.exe",
+	// "php.validate.executablePath": "C:/xampp/php/php.exe",
+	"php.validate.executablePath": "/bin/php",
 
 	// Window zoom/scale
-	"window.zoomLevel": 2,
+	"window.zoomLevel": 1,
 
 	// Workbench style
 	"workbench.tree.indent": 20,
@@ -97,7 +98,7 @@
 	},
 
 	"editor.codeActionsOnSave": {
-		"source.fixAll.markdownlint": true
+		"source.fixAll.markdownlint": "explicit"
 	},
 
 	// Laravel facades error
@@ -105,7 +106,7 @@
 	"intelephense.diagnostics.undefinedMethods": false,
 	"intelephense.environment.phpVersion": "8.1.6",
 	"workbench.startupEditor": "none",
-	"workbench.colorTheme": "Bearded Theme Oceanic",
+	"workbench.colorTheme": "gruvboxConcoctis dark hard",
 	"explorer.confirmDragAndDrop": false,
 
 	"files.associations": {
