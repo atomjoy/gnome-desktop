@@ -1,43 +1,10 @@
-# Gnome 44/45 desktop extensions (Debian 12/Fedora 39)
+# Gnome desktop extensions (Debian 12/Fedora 39)
 
-Instalacja dodatków do gnome desktop i firefoxa.
+Instalacja dodatków do gnome desktop i zmiana stylów.
 
-## Instalacja firefoxa
+## Menedżer Rozszerzeń gnome
 
-- Zainstalować sudo apt install ffmpeg
-- Pobrać firefoxa ze strony https://www.mozilla.org/pl/firefox/new/ rozpakować do **/home/user/Documenty**
-- Uruchamiać z /home/user/Documenty/firefox/firefox-bin (Standardowy firefox-esr się wysypuje z youtubem podczas oglądania)
-
-### Aktywator do firefoxa
-
-```sh
-cp /usr/share/applications/firefox.desktop firefox-bin.desktop
-```
-
-### Dodaj do pliku
-
-```sh
-[Desktop Entry]
-Name=Firefox Bin
-Name[pl]=Firefox Bin
-Comment=Browse the World Wide Web
-Comment[pl]=Przeglądanie stron WWW
-GenericName=Web Browser
-GenericName[pl]=Przeglądarka
-X-GNOME-FullName=Firefox Bin
-X-GNOME-FullName[pl]=Firefox Bin
-Exec=/home/user/Dokumenty/firefox/firefox-bin %u
-Terminal=false
-X-MultipleArgs=false
-Type=Application
-Icon=firefox-esr
-Categories=Network;WebBrowser;
-MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-s>
-StartupWMClass=Firefox Bin
-StartupNotify=true
-```
-
-## Zainstaluj menedżer rozszerzeń gnome
+Zainstaluj **Menedżer Rozszerzeń** gnome z panelu aplikacji ręcznie lub z terminala.
 
 ```sh
 flatpak install flathub com.mattjakeman.ExtensionManager
@@ -46,17 +13,18 @@ flatpak run com.mattjakeman.ExtensionManager
 
 ### Dodaj rozszerzenia
 
-ArcMenu, Blur my Shell, Custom Accent Colors, Vitals, Unblank lock screen, Desktop Icons NG, User Themes, Dash to Panel, Dash to Dock, Dash to Panel
+ArcMenu, Blur my Shell, Vitals, Unblank lock screen, Desktop Icons NG, User Themes, Dash to Panel, Dash to Dock, Dash to Panel, Custom Accent Colors
 
 <img src="https://raw.githubusercontent.com/atomjoy/gnome-desktop/main/gnome-extensions.png" width="100%">
 
-
 ### Gnome desktop extensions (Debian/Fedora)
 
-- Dash to Dock z animacjami się troche krzaczy ze starymi okienkami shella dublują sie paski a czasami paski znikaja :)) 
+- Dash to Dock z animacjami się troche krzaczy ze starymi okienkami shella dublują sie paski a czasami paski znikaja :))
 - Zainstalować zamiast tego ArcMenu i Dash to Panel (umieścić dash na dole ekranów).
+- Ten dodatek **Custom Accent Colors** usuwa ustawienia theme z .config/gtk-4.0/gtk.css nie instalować z themes gtk4
 
 <img src="https://raw.githubusercontent.com/atomjoy/gnome-desktop/main/debian-gnome-3.png" width="100%">
+
 <img src="https://raw.githubusercontent.com/atomjoy/gnome-desktop/main/gruvbox-theme.png" width="100%">
 
 ## Dodaj skalowanie ekranów (125%/150%/175%)
@@ -89,17 +57,55 @@ scaling-factor=uint32 2
 sudo dpkg-reconfigure gdm3
 ```
 
-## Instalacja gnome 43+ theme gtk4
+## Instalacja gnome theme gtk4
 
-Skopiuj z **~/.themes/Gruvbox-Dark-BL-MOD/gtk-4.0** do katalogu **~/.config/gtk4.0**
+Ten dodatek **Custom Accent Colors** usuwa ustawienia theme z **~/.config/gtk-4.0/gtk.css** nie instalować z themes gtk4
 
 ```sh
-# gtk3
+# Gtk3
 sudo apt install gnome-tweaks
 
-# gtk4 run this
-gsettings set org.gnome.desktop.interface gtk-theme Gruvbox-Dark-BL-MOD
+# Gtk4 skopiuj style
+cp -rf ~/.themes/Gruvbox-Dark-BL-MOD/gtk-4.0 ~/.config
 
-# gtk4 refresh titlebars
+# Gtk4 refresh settings
+GTK_THEME=Gruvbox-Dark-BL-MOD
+gsettings set org.gnome.desktop.interface gtk-theme Gruvbox-Dark-BL-MOD
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-Dark-BL-MOD
+```
+
+## Instalacja firefoxa
+
+- Zainstalować sudo apt install ffmpeg
+- Pobrać firefoxa ze strony <https://www.mozilla.org/pl/firefox/new/> rozpakować do **/home/user/Documenty**
+- Uruchamiać z /home/user/Documenty/firefox/firefox-bin (Standardowy firefox-esr się wysypuje z youtubem podczas oglądania)
+
+### Aktywator do firefoxa
+
+```sh
+cp /usr/share/applications/firefox.desktop firefox-bin.desktop
+```
+
+### Dodaj do pliku
+
+```sh
+[Desktop Entry]
+Name=Firefox Bin
+Name[pl]=Firefox Bin
+Comment=Browse the World Wide Web
+Comment[pl]=Przeglądanie stron WWW
+GenericName=Web Browser
+GenericName[pl]=Przeglądarka
+X-GNOME-FullName=Firefox Bin
+X-GNOME-FullName[pl]=Firefox Bin
+Exec=/home/user/Dokumenty/firefox/firefox-bin %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=firefox-esr
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-s>
+StartupWMClass=Firefox Bin
+StartupNotify=true
 ```
