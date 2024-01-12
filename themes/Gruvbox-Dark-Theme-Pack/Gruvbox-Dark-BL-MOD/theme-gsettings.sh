@@ -13,11 +13,12 @@ cp -rf ~/.config/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk.css
 # Set
 GTK_THEME=Gruvbox-Dark-BL-MOD
 
-# Run from terminal (a to zadziała za kilkanaście sekund :D:D:D:D idiotyczne)
+# Run from terminal
 gsettings set org.gnome.desktop.interface gtk-theme Gruvbox-Dark-BL-MOD
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-Dark-BL-MOD
 
-# !!! Co za linux-owe cudaki !!!
+# Ten dodatek usuwa ustawienia theme z .config/gtk-4.0/gtk.css nie instalować (prawdopodobnie)
+# https://extensions.gnome.org/extension/5547/custom-accent-colors 
 
 
