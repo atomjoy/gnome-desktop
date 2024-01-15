@@ -1,0 +1,4 @@
+https://wiki.debian.org/GDM
+https://lists.debian.org/debian-user/2019/04/msg00245.html
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/customizing-login-screen
+https://debian-user.debian.narkive.com/j5Qm0PX5/changing-background-for-gdm3-in-etc-gdm3-greeter-gconf-defaults-not-working
