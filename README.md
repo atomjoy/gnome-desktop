@@ -91,21 +91,22 @@ cp /usr/share/applications/firefox.desktop firefox-bin.desktop
 
 ```sh
 [Desktop Entry]
-Name=Firefox Bin
-Name[pl]=Firefox Bin
+Name=Firefox
+Name[pl]=Firefox
 Comment=Browse the World Wide Web
 Comment[pl]=Przeglądanie stron WWW
 GenericName=Web Browser
-GenericName[pl]=Przeglądarka
-X-GNOME-FullName=Firefox Bin
-X-GNOME-FullName[pl]=Firefox Bin
-Exec=/home/user/Dokumenty/firefox/firefox-bin %u
+GenericName[pl]=Przeglądarka WWW
+X-GNOME-FullName=Firefox Web Browser
+X-GNOME-FullName[pl]=Przeglądarka WWW Firefox
+Exec=/home/user/Szablony/firefox/firefox-bin %u
 Terminal=false
 X-MultipleArgs=false
 Type=Application
-Icon=firefox-esr
+Icon=firefox-20
 Categories=Network;WebBrowser;
-MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-s>
-StartupWMClass=Firefox Bin
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/htt>
+StartupWMClass=Firefox-bin
 StartupNotify=true
+
 ```
