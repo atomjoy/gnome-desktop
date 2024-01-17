@@ -87,15 +87,15 @@ gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-Dark-BL-MOD
 # Lista aktywatorów
 # /usr/share/applications/firefox.desktop
 
-nano ~/.local/share/applications/firefox-bin.desktop
+nano ~/.local/share/applications/firefox.desktop
 ```
 
 ### Dodaj do pliku
 
 ```sh
 [Desktop Entry]
-Name=Firefox
-Name[pl]=Firefox
+Name=Firefox :)
+Name[pl]=Firefox :)
 Comment=Browse the World Wide Web
 Comment[pl]=Przeglądanie stron WWW
 GenericName=Web Browser
@@ -106,10 +106,9 @@ Exec=/home/user/Szablony/firefox/firefox-bin %u
 Terminal=false
 X-MultipleArgs=false
 Type=Application
-Icon=firefox-20
+Icon=firefox_alt2
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/htt>
 StartupWMClass=Firefox-bin
 StartupNotify=true
-
 ```
