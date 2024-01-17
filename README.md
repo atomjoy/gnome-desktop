@@ -84,7 +84,10 @@ gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-Dark-BL-MOD
 ### Aktywator do firefoxa
 
 ```sh
-cp /usr/share/applications/firefox.desktop firefox-bin.desktop
+# Lista aktywatorów
+# /usr/share/applications/firefox.desktop
+
+nano ~/.local/share/applications/firefox-bin.desktop
 ```
 
 ### Dodaj do pliku
