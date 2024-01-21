@@ -112,3 +112,48 @@ MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vn
 StartupWMClass=Firefox-bin
 StartupNotify=true
 ```
+
+## Windows ntfs zapis/odczyt
+
+```sh
+# Show partitions
+sudo lsblk
+sudo parted -l
+
+# Unmount
+sudo umount /dev/sda4
+
+# Falling back to read-only mount because the NTFS partition is in an unsafe state.
+sudo ntfsfix /dev/sda4
+
+# Create
+sudo mkdir -p /mnt/windows
+sudo chmod -R 2777 /mnt/windows
+sudo chown -R root:user /mnt/windows
+```
+
+### Zamontuj z nautilus (file manager) lub z terminala
+
+```sh
+# Mount
+sudo mount -t ntfs-3g -o rw /dev/sda4 /mnt/windows
+
+# Show
+sudo mount | grep windows
+```
+
+### Zamontuj na stałe
+
+```sh
+# Falling back to read-only mount because the NTFS partition is in an unsafe state.
+sudo ntfsfix /dev/sda4
+
+# In file
+nano /etc/fstab
+
+# Add
+/dev/sda4 /mnt/windows ntfs-3g rw,uid=1000,gid=1000,dmask=0000,fmask=0000 0 0
+
+# Reload /etc/fstab and then restart system if not mounted
+systemctl daemon-reload
+```
